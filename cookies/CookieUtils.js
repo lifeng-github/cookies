@@ -79,13 +79,13 @@
 
 //下面也可以把一些属性放到浏览器的本地缓存起来
 if (window.localStorage) {
-    if (!localStorage.getItem('hnsmaintheme')) {
-        localStorage.setItem('hnsmaintheme', 1);
+    if (!localStorage.getItem('name')) {
+        localStorage.setItem('name', 'lifeng-github');
     }
-    if (!localStorage.getItem('hnslanguage')) {
-        localStorage.setItem('hnslanguage', 'en');
+    if (!localStorage.getItem('age')) {
+        localStorage.setItem('age', 18);
     }
 } else {
-    CookieUtils.set('hnsmaintheme', 1, 365, '/');
-    CookieUtils.set('hnslanguage', 'en', 365, '/');
+    CookieUtils.set('name', 'lifeng-github', 365, '/');
+    CookieUtils.set('age', 18, 365, '/');
 }
